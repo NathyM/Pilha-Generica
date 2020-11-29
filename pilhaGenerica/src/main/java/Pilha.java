@@ -14,9 +14,8 @@ public class Pilha <T> {
         }
             topo++;
             vetor[topo] = elemento;
-        
-
     }
+    
     public boolean existeDado(){
         // verifica se existe dado
         if (isEmpty()){
@@ -39,16 +38,11 @@ public class Pilha <T> {
         return vetor[topo];
     }   
     
-    public void setTopo() {
-        this.topo = topo;
-    }
   
     public  T pull(T elemento){
         // Altera o valor do objeto do topo da pilha
         vetor[topo] = elemento;
         return vetor[topo];
-
-
     }
     
 
@@ -61,7 +55,6 @@ public class Pilha <T> {
         t = vetor[topo];
         topo--;
         return t;
-
     }
 
     public int tamanho(){
@@ -77,11 +70,6 @@ public class Pilha <T> {
               iterador.next();
     }
         }
-
-    public void setVetor(T[] vetor) {
-        this.vetor = vetor;
-    }
-
 
 
     @Override
